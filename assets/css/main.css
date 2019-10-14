@@ -3392,7 +3392,7 @@ input, select, textarea {
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 100vh;
+		height: 60vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -3481,7 +3481,7 @@ input, select, textarea {
 				}
 
 		#banner.major {
-			height: 70vh;
+			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
