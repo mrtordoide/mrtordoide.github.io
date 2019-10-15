@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.text {
+  position: relative;
+  width: 450px;
+  height: 40px;
+}
+p .rotate{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 420px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  -webkit-transform: translateZ(25px);
+          transform: translateZ(25px);
+  -webkit-transform-origin: 50% 50% 25px;
+          transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+}
+
+.letter.in {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+  -webkit-transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
