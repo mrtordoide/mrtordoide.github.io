@@ -3154,7 +3154,7 @@ input, select, textarea {
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			margin-left: 1.5em;
+			/*margin-left: 1.5em;*/
 		}
 
 		
