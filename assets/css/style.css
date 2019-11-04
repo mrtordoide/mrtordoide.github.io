@@ -13,7 +13,7 @@ p .rotate{
 
 .word {
   position: absolute;
-  width: 165px;
+  width: 100%;
   opacity: 0;
 }
 
