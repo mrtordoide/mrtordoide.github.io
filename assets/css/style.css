@@ -2,7 +2,7 @@
 
 .text {
   position: relative;
-  width: 450px;
+  width: 150px;
   height: 40px;
 }
 p .rotate{
@@ -13,7 +13,7 @@ p .rotate{
 
 .word {
   position: absolute;
-  width: 420px;
+  width: 180px;
   opacity: 0;
 }
 
