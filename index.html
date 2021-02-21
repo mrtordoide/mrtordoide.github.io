@@ -15,7 +15,8 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-            body{
+            html, body{
+                height: 100%;
                 font-family: 'Ubuntu';
             }
 
@@ -58,7 +59,7 @@
             <p id="tag"></p>
         </div>
         <script>
-            document.getElementById("toggle").onclick = function(){
+            document.body.onclick = function(){
                 let bodyColor = document.body.style.backgroundColor;
 
                 if(bodyColor && bodyColor != 'white'){
