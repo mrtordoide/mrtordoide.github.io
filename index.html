@@ -14,5 +14,12 @@
 		<link rel = "shortcut icon" type="image/png" href="images/logo.png">
 	</head>
   <body>
+	  <h4 id="qod">Hi! Welcome...</h4>
+	  <script>
+		  fetch("https://quotes.rest/qod?language=en")
+		  .then(function(response){
+		  	document.getElementById("qod").innerHTML = response.contents.quotes['quote'];
+		  });
+	  </script>
   </body>
 </html<>
