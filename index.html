@@ -29,7 +29,8 @@
             }
 
             h1:hover, #qod:hover{
-                background-color: yellow;
+                background-color: black;
+                color: white;
                 transition: background-color 1s;
             }
 
@@ -78,7 +79,6 @@
                     document.getElementById("qod").innerHTML = data.quotes[0]['text'];
                     document.getElementById("author").innerHTML = '- '+data.quotes[0]['author'];
                     document.getElementById("tag").innerHTML = 'tag: '+data.quotes[0]['tag'];
-                    console.log(data);
                 }else{
                     console.log('Limit reached');
                 }
