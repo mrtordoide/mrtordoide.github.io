@@ -7,6 +7,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			/* PDF embed ignores height="auto"; match page aspect so height tracks width (Letter 8.5×11). Use 210 / 297 for A4. */
+			.resume-pdf-viewer {
+				width: 100%;
+				aspect-ratio: 8.5 / 11;
+				position: relative;
+			}
+			.resume-pdf-viewer embed {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -44,7 +59,9 @@
 									<header class="major">
 										<h1>My Resume</h1>
 									</header>
-									<embed src="Resume.pdf" width="100%" height="auto" />
+									<div class="resume-pdf-viewer">
+										<embed src="Resume.pdf" type="application/pdf" title="Amit Shrestha resume" />
+									</div>
 								</div>
 							</section>
 
